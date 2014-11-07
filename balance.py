@@ -1,6 +1,7 @@
 
 
 
+
 class Balance():
 
     def __init__(self):
@@ -19,13 +20,8 @@ import sys
 
 if len(sys.argv) < 2:
     print("error: argument required")
-    sys.exit()
+    exit()
 
-string_to_check = ""
+list_to_check = sys.argv[1]
 
-
-print(sys.argv[1])
-
-print(Balance.go("It's happening..."))
-
-print("If Balance is a module, I shouldn't exist.")
+print(Balance.go(list_to_check))
